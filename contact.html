@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
     <title>contact</title>
 </head>
-
+ 
 <body class="background">
+    <!-- my header buttons -->
     <header>
         <nav>
             <ul class="head">
@@ -19,6 +20,7 @@
         </nav>
     </header>
     <main>
+        <!-- my main content on the page -->
         <h1>Contact me</h1>
             <div class="box-properties big-box-properties projects-box contact-box">
                 <p> - 1195450@student.roc-nijmegen.nl</p>
@@ -26,15 +28,28 @@
             </div>
     </main>
     <footer>
+        <!-- my decorative footer as wel as the links to github/linkdin and my message field -->
         <div class="footer-box box-properties big-box-properties contact-box-1"></div>
         <div class="footer-box box-properties big-box-properties contact-box-2"></div>
         <div class="footer-container">
-            <div class="footer-box box-properties big-box-properties contact-box-3"></div>
-            <div class="footer-box box-properties big-box-properties contact-box-4"></div>
+            <div class="footer-box box-properties big-box-properties contact-box-3 img">
+                <a href="https://www.linkedin.com/in/ferdinand-sanders-8911a9348/"><img src="img/linkedin.png" alt="media" width="90px" height="90px" class="linkedin hover-pointer"></a>
+            </div>
+            <div class="footer-box box-properties big-box-properties contact-box-4 img">
+                <a href="https://github.com/Ferdinand1195450"><img src="img/github.png" alt="media" width="90px" height="90px" class="github hover-pointer"></a>
+            </div>
         </div>
         <div class="footer-box box-properties big-box-properties contact-box-5"></div>
-        <div class="footer-box box-properties big-box-properties contact-box-6"></div>
-        <div class="footer-box box-properties big-box-properties contact-box-7"></div>
+        <div class="footer-box box-properties big-box-properties contact-box-6">
+            <form action="">
+                <input type="text" name="email" class="box-properties email" style="width: 270px; height: 38px;" placeholder="Your email">
+                <input type="text" name="name" class="box-properties email" style="width: 270px; height: 38px;" placeholder="Your name">
+                <textarea type="text" name="message" class="box-properties email" style="width: 270px" rows="9" placeholder="Your message"></textarea>
+                <div class="box-properties email hover-pointer send">
+                    send
+                </div>
+            </form>
+        </div>
     </footer>
 </body>
 

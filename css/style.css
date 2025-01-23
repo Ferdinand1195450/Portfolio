@@ -1,3 +1,4 @@
+/* style that i need on all my pages */
 *{
     margin:0;
     padding:0;
@@ -16,6 +17,8 @@
   }
 .hover-pointer:hover{
     cursor: pointer;
+    scale: 1.1;
+    transition: all 0.3s;
 }
 .background{
     background-image: linear-gradient(#040026 40%, 80%, #1C509A 100%);
@@ -47,25 +50,14 @@ main{
     align-items:center;
     flex-direction: column;
 }
-.projects-container{
-    display:flex;
-    width: 80vw;
-    justify-content:space-between;
-}
 h1{
     font-size: 50px;
     font-weight: lighter;
     margin-bottom: 7vh;
 }
-.projects{
-    margin:0%;
-}
 p{
     font-size: 25px;
     margin: 3vh;
-}
-.home{
-    margin-top: 10vh;
 }
 .box-properties{
     animation: pulse 30s infinite;
@@ -77,6 +69,62 @@ p{
     border-width: 7px;
     border-radius: 20px;
 }
+/* style for my index page. */
+.home{
+    margin-top: 10vh;
+}
+.home-box-2{
+    width: 9vw;
+    height: 50vh;
+}
+.home-box-3{
+    width: 13vw;
+    height: 20vh;
+    border-right:0px;
+    border-top-right-radius: 0%;
+}
+.home-box-4{
+    width: 20vw;
+    height: 40vh;
+}
+.home-box-5{
+    width: 9vw;
+    height: 70vh;
+}
+/* style for my about page. */
+.about-box{
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    width: 70vw;
+}
+.about-box-2{
+    width: 7vw;
+    height: 10vh;
+    border-right:0px;
+    border-top-right-radius: 0%;
+}
+.about-box-3{
+    width: 25vw;
+    height: 15vh;
+}
+.about-box-4{
+    width: 8vw;
+    height: 25vh;
+}
+.about-box-5{
+    width: 13vw;
+    height: 20vh;
+}
+/* style for my projects page. */
+.projects-container{
+    display:flex;
+    width: 80vw;
+    justify-content:space-between;
+}
+.projects{
+    margin:0%;
+}
 .projects-box{
     display:flex;
     flex-direction: column;
@@ -84,15 +132,90 @@ p{
     width: 33vw;
     padding-left: 3vw;
 }
-.about-box{
-    display:flex;
-    flex-direction: column;
-    text-align:center;
-    width: 70vw;
+.projects-box-2{
+    width: 8vw;
+    height: 20vh;
 }
+.projects-box-3{
+    width: 6vw;
+    height: 10vh;
+    border-right:0px;
+    border-top-right-radius: 0%;
+}
+.projects-box-4{
+    width: 16vw;
+    height: 22vh;
+    border-right:0px;
+    border-top-right-radius: 0%;
+}
+.projects-box-5{
+    width: 8vw;
+    height: 30vh;
+}
+.projects-box-6{
+    width: 8vw;
+    height: 35vh;
+}
+/* style for my contact page. */
 .contact-box{
     padding:0;
 }
+.contact-box-2{
+    width: 9vw;
+    height: 40vh;
+}
+.contact-box-3{
+    display:flex;
+    width: 16vw;
+    height: 22vh;
+}
+.contact-box-4{
+    display:flex;
+    justify-content: space-around;
+    width: 12vw;
+    height: 18vh;
+    border-left:0px;
+    border-top-left-radius: 0%;
+}
+.contact-box-5{
+    width: 10vw;
+    height: 35vh;
+}
+.contact-box-6{
+    justify-content: space-around;
+    width: 20vw;
+    height: 62.5vh;
+}
+.img{
+    display:flex;
+    justify-content: space-around;
+}
+.linkedin{
+    margin-top: 40px;
+}
+.github{
+    margin-top: 30px;
+}
+::placeholder{
+    color:#6AE4FF;
+}
+.email{
+    border-radius: 9px;
+    margin-top: 15px;
+}
+textarea:focus{
+    outline: none;
+}
+input:focus{
+    outline: none;
+}
+.send{
+    padding: 5px;
+    text-align: left;
+    width: 40px;
+    border-width: 2px;
+}
+/* style for all my footers. */
 footer{
     height: 30vh;
     display:flex;
@@ -113,117 +236,57 @@ footer{
     border-bottom-left-radius: 0%;
     border-bottom-right-radius: 0%;
 }
-.home-box-1{
-    width: 13vw;
-    height: 40vh;
+/* media queries for when it gets smaller */
+@media only screen and (min-width: 768px){
+    .home-box-1{
+        width: 13vw;
+        height: 40vh;
+    }
+    .home-box-6{
+        width: 9vw;
+        height: 40vh;
+    }
+    .about-box-1{
+        width: 6vw;
+        height: 20vh;
+    }
+    .about-box-6{
+        width: 13vw;
+        height: 10vh;
+    }
+    .projects-box-1{
+        width: 10vw;
+        height: 35vh;
+    }
+    .projects-box-7{
+        width: 16vw;
+        height: 22vh;
+    }
+    .contact-box-1{
+        width: 9vw;
+        height: 55vh;
+    }
 }
-.home-box-2{
-    width: 9vw;
-    height: 50vh;
-}
-.home-box-3{
-    width: 13vw;
-    height: 20vh;
-    border-right:10px;
-    border-top-right-radius: 0%;
-}
-.home-box-4{
-    width: 20vw;
-    height: 40vh;
-}
-.home-box-5{
-    width: 9vw;
-    height: 70vh;
-}
-.home-box-6{
-    width: 9vw;
-    height: 40vh;
-}
-.about-box-1{
-    width: 6vw;
-    height: 20vh;
-}
-.about-box-2{
-    width: 7vw;
-    height: 10vh;
-    border-right:10px;
-    border-top-right-radius: 0%;
-}
-.about-box-3{
-    width: 25vw;
-    height: 15vh;
-}
-.about-box-4{
-    width: 8vw;
-    height: 25vh;
-}
-.about-box-5{
-    width: 13vw;
-    height: 20vh;
-}
-.about-box-6{
-    width: 13vw;
-    height: 10vh;
-}
-.projects-box-1{
-    width: 10vw;
-    height: 35vh;
-}
-.projects-box-2{
-    width: 8vw;
-    height: 20vh;
-}
-.projects-box-3{
-    width: 6vw;
-    height: 10vh;
-    border-right:10px;
-    border-top-right-radius: 0%;
-}
-.projects-box-4{
-    width: 16vw;
-    height: 22vh;
-    border-right:10px;
-    border-top-right-radius: 0%;
-}
-.projects-box-5{
-    width: 8vw;
-    height: 30vh;
-}
-.projects-box-6{
-    width: 8vw;
-    height: 35vh;
-}
-.projects-box-7{
-    width: 16vw;
-    height: 22vh;
-}
-.contact-box-1{
-    width: 9vw;
-    height: 55vh;
-}
-.contact-box-2{
-    width: 9vw;
-    height: 40vh;
-}
-.contact-box-3{
-    width: 16vw;
-    height: 22vh;
-}
-.contact-box-4{
-    width: 12vw;
-    height: 18vh;
-    border-left:10px;
-    border-top-left-radius: 0%;
-}
-.contact-box-5{
-    width: 10vw;
-    height: 35vh;
-}
-.contact-box-6{
-    width: 5vw;
-    height: 25vh;
-}
-.contact-box-7{
-    width: 7vw;
-    height: 60vh;
+@media only screen and (max-width: 768px){
+    .home-box-1{
+        display: none;
+    }
+    .home-box-6{
+        display: none;
+    }
+    .about-box-1{
+        display: none;
+    }
+    .about-box-6{
+        display: none;
+    }
+    .projects-box-1{
+        display: none;
+    }
+    .projects-box-7{
+        display: none;
+    }
+    .contact-box-1{
+        display: none;
+    }
 }
