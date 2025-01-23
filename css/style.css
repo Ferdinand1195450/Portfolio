@@ -192,9 +192,13 @@ p{
 }
 .linkedin{
     margin-top: 40px;
+    width: 90px;
+    height: 90px;
 }
 .github{
     margin-top: 30px;
+    width: 90px;
+    height: 90px;
 }
 ::placeholder{
     color:#6AE4FF;
